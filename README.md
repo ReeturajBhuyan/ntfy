@@ -1,0 +1,25 @@
+# NTFY 
+
+BASIC SETUP
+sudo docker run -p 80:80 -itd binwiederhier/ntfy serve
+
+ 
+
+ 
+
+ADVANCED SETUP
+sudo docker run \
+-v /var/cache/ntfy:/var/cache/ntfy \
+-v /etc/ntfy:/etc/ntfy \
+-p 80:80 \
+-itd \
+binwiederhier/ntfy \
+serve \
+--cache-file /var/cache/ntfy/cache.db
+
+
+####################################################
+
+Server config file (server.yml): https://github.com/binwiederhier/ntfy/blob/main/server/server.yml
+
+NTFY DOCS: https://docs.ntfy.sh/
