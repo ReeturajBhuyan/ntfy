@@ -28,7 +28,9 @@ NTFY DOCS: https://docs.ntfy.sh/
 
 
 For K8s deployment:
+
 kubectl apply -f k8-config.yaml
+
 kubectl apply -f ntfy-values-k8.yaml
 
 
