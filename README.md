@@ -24,6 +24,12 @@ Server config file (server.yml): https://github.com/binwiederhier/ntfy/blob/main
 
 NTFY DOCS: https://docs.ntfy.sh/
 
+####################################################
+
+
+For K8s deployment:
+kubectl apply -f k8-config.yaml
+kubectl apply -f ntfy-values-k8.yaml
 
 
 Setting up cloudflare tunnel ( Pre-requisite domain name)
